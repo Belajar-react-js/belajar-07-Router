@@ -1,5 +1,11 @@
+import Beranda from "./pages/Beranda";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Beranda />
+    </>
+  );
 }
 
 export default App;
