@@ -1,9 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 
 function NavbarSipenting() {
   return (
@@ -15,10 +14,15 @@ function NavbarSipenting() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2 my-lg-0 fw-medium fs-5" style={{ maxHeight: "100px" }} navbarScroll>
-            <Nav.Link href="#action1">Beranda</Nav.Link>
-            <Nav.Link href="#action2">Layanan Kami</Nav.Link>
-            <Nav.Link href="#action1">Cek IMT </Nav.Link>
-            <Nav.Link href="#action2">Artikel</Nav.Link>
+            <Nav.Link as={NavLink} to="/" exact>
+              Beranda
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/cekstunting">
+              Cek IMT
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/artikel">
+              Artikel
+            </Nav.Link>
           </Nav>
           <Button className="mx-3" variant="outline-success">
             Masuk

@@ -1,4 +1,3 @@
-import { Navbar } from "react-bootstrap";
 import NavbarSipenting from "../components/Navbar";
 import Hero from "../components/Hero";
 

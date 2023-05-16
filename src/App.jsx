@@ -4,6 +4,7 @@ import Artikel from "./pages/Artikel";
 
 import { Routes, Route } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
+
 function App() {
   return (
     <>
