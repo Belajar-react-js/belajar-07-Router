@@ -1,9 +1,18 @@
 import Beranda from "./pages/Beranda";
+import CekStunting from "./pages/CekStunting";
+import Artikel from "./pages/Artikel";
 
+import { Routes, Route } from "react-router-dom";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <>
-      <Beranda />
+      <Routes>
+        <Route path="/" element={<Beranda />} />
+        <Route path="/cekstunting" element={<CekStunting />} />
+        <Route path="/artikel" element={<Artikel />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
     </>
   );
 }
